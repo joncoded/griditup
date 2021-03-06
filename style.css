@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700');
+html, body { 
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+/* the grid factory */
+
+.grid { 
+  display: grid; 
+  grid: auto / auto auto auto auto;
+  justify-items: stretch;
+  align-items: start;
+  /* optional ---> */ 
+  grid-gap: 15px;/
+  margin: 0; padding: 0; 
+}
+
+/* optional visualizations */
+
+.grid div { 
+  padding: 10px; 
+}
+
+.grid div:nth-child(3n) { background: #0c0; color: #fff; }
+.grid div:nth-child(3n+1) { background: #060; color: #fff; }
+.grid div:nth-child(3n+2) { background: #030; color: #fff; }
+
+/* helper classes */
+
+form { border: 1px solid #ccc; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: stretch; margin-bottom: 15px; }
+form .select-wpr { margin: 0 15px 15px 15px; }
+
+.l-none { list-style-type: none; }
+.m-half { margin: 15px; }
+.code { background: #ccc; color: #333; width: calc(100%-10px); padding: 10px; line-height: 2rem; }
+[class^="code-"] { display: block; }
+
+body {
+  background: #000;
+  color: #fff;
+  padding: 0 30px 30px 30px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h1 small {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+select {
+  padding: 7.5px 15px;
+}

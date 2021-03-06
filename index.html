@@ -1,0 +1,78 @@
+<h1>[grid][it][up] <small>a css grid cheat-app</small></h1>
+  
+<form>
+  
+  <div class="select-wpr">
+    <p><label for="grid-cols"># of columns</label></p>
+    <select id="grid-cols">    
+      <option disabled selected value="3">select</option>
+      <option value="1">1</option>      
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>      
+      <option value="6">6</option>        
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>      
+    </select>
+  </div>
+  
+  <div class="select-wpr">
+    <p><label for="grid-just">justify-content (horizontal)</label></p>
+    <select id="grid-just">    
+      <option disabled selected value="stretch">select</option>
+      <option value="stretch">stretch</option>      
+      <option value="start">start</option>      
+      <option value="center">center</option>
+      <option value="end">end</option>
+    </select>
+  </div>  
+
+  <div class="select-wpr">
+    <p><label for="grid-align">align (vertical)</label></p>
+    <select id="grid-align">    
+      <option disabled selected value="start">select</option>
+      <option value="start">start</option>            
+      <option value="center">center</option>
+      <option value="end">end</option>
+    </select>
+  </div>
+  
+  <div class="select-wpr">
+    <p><label for="grid-gaps">gap (px)</label></p>
+    <select id="grid-gaps">    
+      <option disabled selected value="15px">select</option>
+      <option value="0">0</option>      
+      <option value="15px">15</option>
+      <option value="30px">30</option>
+    </select>
+  </div>  
+  
+</form>
+
+<h2>output</h2>
+
+<div class="grid">
+  <div>1</div>
+  <div>2<br>2</div>
+  <div>3<br>3<br>3</div>  
+  <div>4<br>4<br>4<br>4</div>  
+</div>
+
+<h2>css</h2>
+
+<div class="code">
+  <code>
+  .grid { <br />
+    display: grid; <br />
+    <span class="code-gaps">grid-gap: 15px;</span>
+    <span class="code-grid">grid: auto / auto auto auto auto;</span>
+    <span class="code-just">justify-content: none;</span>
+    <span class="code-lign">align-items: start;</span>
+   }
+  </code>
+</div>
